@@ -1,0 +1,34 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wine-react-blocks/contact-cta",
+	"version": "1.0.0",
+	"title": "Contact CTA",
+	"category": "wine-blocks",
+	"icon": "email",
+	"description": "Call-to-action block for contact and engagement",
+	"keywords": ["contact", "cta", "button", "call to action"],
+	"supports": {
+		"html": false,
+		"align": ["wide", "full"],
+		"anchor": true
+	},
+	"attributes": {
+		"headline": {
+			"type": "string",
+			"default": ""
+		},
+		"buttonText": {
+			"type": "string",
+			"default": "Get in Touch"
+		},
+		"buttonUrl": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "wine-react-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

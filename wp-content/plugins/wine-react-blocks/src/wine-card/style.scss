@@ -1,0 +1,56 @@
+/**
+ * Wine Card Block - Frontend Styles
+ */
+
+.wine-card {
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	border-radius: 4px;
+	overflow: hidden;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+	&:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+	}
+}
+
+.wine-card__image {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 3 / 4;
+	object-fit: cover;
+	display: block;
+}
+
+.wine-card__content {
+	padding: 1.5rem;
+}
+
+.wine-card__title {
+	margin: 0 0 0.5rem;
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: #2c2c2c;
+}
+
+.wine-card__type {
+	display: inline-block;
+	padding: 0.25rem 0.75rem;
+	margin-bottom: 0.75rem;
+	border-radius: 4px;
+	font-size: 0.875rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	background-color: #f5f2ed;
+	color: #722f37;
+}
+
+.wine-card__description {
+	margin: 0;
+	color: #4a4a4a;
+	line-height: 1.6;
+}

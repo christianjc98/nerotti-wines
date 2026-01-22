@@ -1,0 +1,28 @@
+{
+	"name": "wine-react-blocks",
+	"version": "1.0.0",
+	"description": "Custom Gutenberg blocks for wine website built with React",
+	"author": "Your Name",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build --webpack-copy-php --webpack-src-dir=src",
+		"start": "wp-scripts start --webpack-copy-php --webpack-src-dir=src",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^27.0.0"
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "^13.0.0",
+		"@wordpress/blocks": "^13.0.0",
+		"@wordpress/components": "^27.0.0",
+		"@wordpress/i18n": "^5.0.0",
+		"@wordpress/element": "^6.0.0",
+		"@wordpress/data": "^10.0.0",
+		"@wordpress/core-data": "^7.0.0"
+	}
+}

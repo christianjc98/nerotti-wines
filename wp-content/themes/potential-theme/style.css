@@ -1,0 +1,52 @@
+/*
+Theme Name: Potential Wine Theme
+Theme URI: https://example.com
+Author: Your Name
+Author URI: https://example.com
+Description: A custom WordPress block theme for a wine brand website. Built with Full Site Editing (FSE) and modern block patterns for a clean, elegant presentation of wines, experiences, and brand story.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.4
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: potential-wine-theme
+Tags: block-theme, full-site-editing, wine, custom-post-types, accessibility-ready
+*/
+
+/*
+ * This is a block theme that uses theme.json for styling.
+ * Most styles are configured in theme.json.
+ * Additional custom styles can be added below if needed.
+ */
+
+/* Custom styles for wine-specific elements */
+.wine-type-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Ensure images maintain aspect ratio */
+.wp-block-image img {
+    height: auto;
+}
+
+/* Smooth transitions for interactive elements */
+a,
+button,
+.wp-block-button__link {
+    transition: all 0.3s ease;
+}
+
+/* Accessibility: Focus visible styles */
+a:focus-visible,
+button:focus-visible,
+.wp-block-button__link:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}

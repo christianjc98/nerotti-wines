@@ -1,0 +1,93 @@
+/**
+ * Wine Grid Block - Editor Styles
+ *
+ * Styles specific to the block editor interface
+ * Ensures the preview looks good while editing
+ *
+ * @package Wine_React_Blocks
+ */
+
+.wp-block-winery-wine-grid {
+	/**
+	 * Editor-specific placeholder styling
+	 */
+	.components-placeholder {
+		min-height: 200px;
+		padding: 2rem;
+
+		.components-spinner {
+			margin: 1rem 0;
+		}
+
+		p {
+			max-width: 600px;
+			margin: 0 auto;
+			color: #757575;
+		}
+	}
+
+	/**
+	 * Adjust grid spacing in editor
+	 * Slightly tighter to fit editor canvas better
+	 */
+	.wine-grid__container {
+		@media (min-width: 782px) {
+			gap: 1.5rem;
+		}
+	}
+
+	/**
+	 * Editor card adjustments
+	 */
+	.wine-grid__item {
+		cursor: default;
+
+		/* Prevent hover effects from being too distracting in editor */
+		&:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+		}
+	}
+
+	/**
+	 * Disable link functionality in editor
+	 */
+	.wine-grid__title a,
+	.wine-grid__image a,
+	.wine-grid__link {
+		pointer-events: none;
+		cursor: default;
+	}
+
+	/**
+	 * Editor preview notice
+	 * Can be added optionally to remind editors this is a preview
+	 */
+	&[data-type="winery/wine-grid"]::before {
+		content: "";
+		display: block;
+		position: relative;
+	}
+}
+
+/**
+ * Inspector Controls Styling
+ * Enhance the sidebar controls appearance
+ */
+.block-editor-block-inspector {
+	.components-panel__body-title {
+		.components-panel__icon {
+			margin-right: 8px;
+		}
+	}
+
+	/**
+	 * Help text styling
+	 */
+	.components-base-control__help {
+		font-size: 12px;
+		font-style: italic;
+		color: #757575;
+		margin-top: 8px;
+	}
+}

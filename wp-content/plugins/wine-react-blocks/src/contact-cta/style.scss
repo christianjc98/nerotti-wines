@@ -1,0 +1,51 @@
+/**
+ * Contact CTA Block - Frontend Styles
+ */
+
+.contact-cta {
+	background: linear-gradient(135deg, #722f37 0%, #2c2c2c 100%);
+	padding: 4rem 2rem;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.contact-cta__content {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.contact-cta__headline {
+	margin: 0 0 2rem;
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: #faf7f2;
+	line-height: 1.2;
+
+	@media (max-width: 768px) {
+		font-size: 2rem;
+	}
+}
+
+.contact-cta__button {
+	display: inline-block;
+	padding: 1rem 2.5rem;
+	background-color: #d4af37;
+	color: #2c2c2c;
+	font-size: 1rem;
+	font-weight: 600;
+	text-decoration: none;
+	border-radius: 4px;
+	letter-spacing: 0.05em;
+	transition: all 0.3s ease;
+
+	&:hover {
+		background-color: #e6c254;
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+	}
+
+	&:focus {
+		outline: 2px solid #faf7f2;
+		outline-offset: 2px;
+	}
+}

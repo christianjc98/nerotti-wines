@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wine-react-blocks/wine-card",
+	"version": "1.0.0",
+	"title": "Wine Card",
+	"category": "wine-blocks",
+	"icon": "beer",
+	"description": "Display a wine product card with image, name, type, and description",
+	"keywords": ["wine", "product", "card"],
+	"supports": {
+		"html": false,
+		"align": true,
+		"anchor": true
+	},
+	"attributes": {
+		"imageUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"imageId": {
+			"type": "number"
+		},
+		"imageAlt": {
+			"type": "string",
+			"default": ""
+		},
+		"wineName": {
+			"type": "string",
+			"default": ""
+		},
+		"wineType": {
+			"type": "string",
+			"default": "red"
+		},
+		"description": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "wine-react-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

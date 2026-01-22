@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "winery/wine-grid",
+	"version": "1.0.0",
+	"title": "Wine Grid",
+	"category": "wine-blocks",
+	"icon": "grid-view",
+	"description": "Display a grid of wine posts with filtering options",
+	"keywords": ["wine", "grid", "catalog", "products"],
+	"supports": {
+		"html": false,
+		"align": ["wide", "full"],
+		"anchor": true
+	},
+	"attributes": {
+		"postsToShow": {
+			"type": "number",
+			"default": 6
+		},
+		"wineType": {
+			"type": "string",
+			"default": ""
+		},
+		"orderBy": {
+			"type": "string",
+			"default": "title",
+			"enum": ["title", "meta_value"]
+		},
+		"order": {
+			"type": "string",
+			"default": "ASC",
+			"enum": ["ASC", "DESC"]
+		}
+	},
+	"textdomain": "wine-react-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

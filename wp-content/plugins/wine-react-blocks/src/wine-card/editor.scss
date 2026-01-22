@@ -1,0 +1,31 @@
+/**
+ * Wine Card Block - Editor Styles
+ */
+
+.wine-card {
+	.wine-card__image-container {
+		position: relative;
+		background: #f5f2ed;
+		min-height: 200px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.wine-card__upload-button {
+		margin: 2rem;
+	}
+
+	.wine-card__remove-image {
+		position: absolute;
+		top: 0.5rem;
+		right: 0.5rem;
+		z-index: 10;
+	}
+
+	.wine-card__image {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+}
